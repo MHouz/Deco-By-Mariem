@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Deco by Mariem</title>
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12 flex justify-between items-center text-white" id="navbar">
+      <div class="flex items-center space-x-1 text-gold">
+        <a href="/" class="flex items-center space-x-1">
+          <img src="/symbole.png" alt="Symbol" class="h-20 w-auto">
+          <div class="text-2xl font-heading font-bold tracking-widest uppercase">DECO BY MARIEM</div>
+        </a>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium">
+        <a href="/" class="hover:text-gold transition-colors">Home</a>
+        <a href="/about.html" class="hover:text-gold transition-colors">About</a>
+        <a href="/projects.html" class="hover:text-gold transition-colors">Projects</a>
+        <a href="/contact.html" class="text-gold transition-colors">Contact</a>
+        <a href="/faq.html" class="hover:text-gold transition-colors">FAQ</a>
+        <button class="btn-gold-fill px-6 py-2 ml-4">Book a Consultation</button>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-charcoal flex flex-col items-center justify-center space-y-8 text-xl uppercase tracking-widest transition-all duration-300">
+        <button class="absolute top-6 right-6 text-white" id="close-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <a href="/" class="mobile-link hover:text-gold">Home</a>
+        <a href="/about.html" class="mobile-link hover:text-gold">About</a>
+        <a href="/projects.html" class="mobile-link hover:text-gold">Projects</a>
+        <a href="/contact.html" class="mobile-link text-gold">Contact</a>
+        <a href="/faq.html" class="mobile-link hover:text-gold">FAQ</a>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="relative h-[300px] flex items-end justify-start overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=2600&auto=format&fit=crop');"></div>
+      <div class="absolute inset-0 bg-charcoal/65"></div>
+      <div class="relative z-10 px-6 md:px-12 lg:px-24 mb-12 fade-in">
+        <h1 class="text-white text-5xl md:text-6xl font-heading mb-4">Contact</h1>
+        <div class="flex items-center space-x-2 text-sm uppercase tracking-widest text-gold text-bold">
+          <a href="/" class="hover:text-white transition-colors">Home</a>
+          <span>&gt;</span>
+          <span>Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURES ROW -->
+    <section class="section-padding bg-white">
+      <div class="text-center mb-16 fade-in">
+        <div class="flex items-center justify-center space-x-3 mb-4">
+          <img src="/symbole.png" alt="Symbol" class="h-12 w-auto">
+          <span class="text-gold uppercase tracking-[0.3em] text-xs font-bold">Contact</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-heading text-charcoal">We'd Love to Hear From You</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div class="p-8 border border-gold/10 text-center hover:-translate-y-2 transition-transform duration-300 group fade-in">
+          <div class="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">🏛️</div>
+          <h3 class="text-xl font-heading text-charcoal mb-4">Studio Visit</h3>
+          <p class="text-charcoal/50 text-sm font-light">Visit our studio in Marrakech by appointment for a deep dive into our material library.</p>
+        </div>
+        <div class="p-8 border border-gold/10 text-center hover:-translate-y-2 transition-transform duration-300 group fade-in">
+          <div class="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">🎨</div>
+          <h3 class="text-xl font-heading text-charcoal mb-4">Design Consultation</h3>
+          <p class="text-charcoal/50 text-sm font-light">Book a free 30-minute discovery call to discuss your vision and project feasibility.</p>
+        </div>
+        <div class="p-8 border border-gold/10 text-center hover:-translate-y-2 transition-transform duration-300 group fade-in">
+          <div class="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">💬</div>
+          <h3 class="text-xl font-heading text-charcoal mb-4">Full Support</h3>
+          <p class="text-charcoal/50 text-sm font-light">We guide you through every step of the process, from initial concept to the final styling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT FORM + INFO -->
+    <section class="flex flex-col lg:flex-row min-h-[600px]">
+      <!-- LEFT: Form -->
+      <div class="w-full lg:w-1/2 bg-ivory flex items-center justify-center p-6 md:p-12 lg:p-24 relative overflow-visible z-10">
+        <div class="bg-white p-8 md:p-12 shadow-xl w-full max-w-xl fade-in">
+          <form class="space-y-8">
+            <div>
+              <input type="text" placeholder="Name" class="form-input" required>
+            </div>
+            <div>
+              <input type="email" placeholder="Email" class="form-input" required>
+            </div>
+            <div>
+              <input type="tel" placeholder="Phone" class="form-input">
+            </div>
+            <div>
+              <textarea placeholder="Message" rows="5" class="form-input resize-none" required></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 bg-gold text-charcoal uppercase tracking-widest font-bold hover:bg-charcoal hover:text-gold transition-all duration-500">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: Info -->
+      <div class="w-full lg:w-1/2 bg-charcoal text-ivory flex items-center justify-center p-6 md:p-12 lg:p-24">
+        <div class="max-w-md w-full fade-in">
+          <h2 class="text-4xl md:text-5xl font-heading mb-4">For More Details Contact Us!</h2>
+          <div class="w-24 h-1 bg-gold mb-8"></div>
+          <p class="text-ivory/50 font-light leading-relaxed mb-12">Whether you are looking to renovate a traditional riad or design a modern luxury villa, we are here to bring your vision to life with precision and soul.</p>
+          
+          <ul class="space-y-8">
+            <li class="flex items-start space-x-4">
+              <svg class="w-6 h-6 text-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <div>
+                <span class="block text-gold text-xs font-bold uppercase tracking-widest mb-1">Our Studio</span>
+                <span class="text-lg">Rue de la Liberté, Marrakech, Morocco</span>
+              </div>
+            </li>
+            <li class="flex items-start space-x-4">
+              <svg class="w-6 h-6 text-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <div>
+                <span class="block text-gold text-xs font-bold uppercase tracking-widest mb-1">Email Us</span>
+                <span class="text-lg">contact@decobymariem.com</span>
+              </div>
+            </li>
+            <li class="flex items-start space-x-4">
+              <svg class="w-6 h-6 text-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              <div>
+                <span class="block text-gold text-xs font-bold uppercase tracking-widest mb-1">Call Us</span>
+                <span class="text-lg">+212 600-000-000</span>
+              </div>
+            </li>
+            <li class="flex items-start space-x-4">
+              <svg class="w-6 h-6 text-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+              <div>
+                <span class="block text-gold text-xs font-bold uppercase tracking-widest mb-1">Instagram</span>
+                <span class="text-lg">@decobymariem</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MAP -->
+    <section class="h-[400px] w-full relative border-y-[20px] border-white fade-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108704.91230193427!2d-8.077894285497426!3d31.633842142278788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d9611f681%3A0x8c0853504ef51759!2sMarrakesh!5e0!3m2!1sen!2sma!4v1715012345678" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="absolute inset-0 pointer-events-none border-[1px] border-gold/20 m-4"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-charcoal pt-24 pb-12 px-6 md:px-12 lg:px-24 text-ivory">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div class="space-y-6">
+          <div class="text-2xl font-heading text-gold tracking-widest uppercase">Deco by Mariem</div>
+          <p class="text-ivory/50 text-sm font-light leading-relaxed">Crafting spaces with soul through meticulous interior design and bespoke curation. Every detail matters.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-ivory hover:text-gold transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" class="text-ivory hover:text-gold transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-gold uppercase tracking-widest text-xs font-bold mb-8">Quick Links</h4>
+          <ul class="space-y-4 text-sm font-light text-ivory/70">
+            <li><a href="/" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="hover:text-gold transition-colors">Projects</a></li>
+            <li><a href="/contact.html" class="text-gold transition-colors">Contact</a></li>
+            <li><a href="/faq.html" class="hover:text-gold transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-gold uppercase tracking-widest text-xs font-bold mb-8">Company</h4>
+          <ul class="space-y-4 text-sm font-light text-ivory/70">
+            <li><a href="/about.html" class="hover:text-gold transition-colors">Our Story</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Press</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-gold uppercase tracking-widest text-xs font-bold mb-8">Contact Information</h4>
+          <ul class="space-y-4 text-sm font-light text-ivory/70">
+            <li class="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>123 Design Lane, Marrakech, Morocco</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>hello@decobymariem.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-ivory/10 pt-8 text-center text-ivory/30 text-xs font-light tracking-widest uppercase">
+        &copy; 2026 Deco by Mariem. All rights reserved.
+      </div>
+    </footer>
+
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
