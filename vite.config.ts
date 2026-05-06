@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react(), tailwindcss()],
-   base: '/Deco-By-Mariem/',// 👈 Add this — replace 'mariem' with your exact repo name
+    base: mode === 'production' ? '/Deco-By-Mariem/' : '/',
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
